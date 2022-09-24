@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Dteam_Android_DIA</string>
+    <string name="IncomeWith">Income With</string>
+    <string name="amount_of_money">Amount of money</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="lblIncomeValue">Amount</string>
+    <string name="AppIntro">
+        We help you manage your finances according to the modern 6-cup method, helping you to divide the necessary parts for spending in life.
+    </string>
+
+</resources>
