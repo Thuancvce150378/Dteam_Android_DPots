@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Button;
+import android.view.View;
 import android.widget.ImageButton;
 
 public class IncomeSetup extends AppCompatActivity {
@@ -15,12 +15,17 @@ public class IncomeSetup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_income_setup);
-        btnNext = findViewById(R.id.btnNextpage);
+        btnNext = findViewById(R.id.btnNext);
         Log.d("IncomeSetup", "IncomeSetup");
-        btnNext.setOnClickListener(v -> {
-            Log.d("IncomeSetup", "Next page");
-            Intent intent = new Intent(IncomeSetup.this, ProgramIntro.class);
-            startActivity(intent);
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    Log.d("IncomeSetup", "Next page");
+                    Intent intent = new Intent(IncomeSetup.this, ProgramIntro.class);
+                    startActivity(intent);
+            }
         });
     }
+
+
 }

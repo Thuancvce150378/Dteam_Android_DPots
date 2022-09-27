@@ -2,6 +2,7 @@ package com.example.dteam_android_dia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,7 +12,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         if(true)//check user have been value for income
         {
-            setContentView(R.layout.activity_income_setup);
+            Intent intent = new Intent(MainActivity.this, IncomeSetup.class);
+            startActivity(intent);
         }
         else
         {
