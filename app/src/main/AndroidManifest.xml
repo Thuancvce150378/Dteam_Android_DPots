@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Dteam_Android_DIA"
         tools:targetApi="31">
         <activity
+            android:name=".history_pot"
+            android:exported="false" />
+        <activity
             android:name=".PotsSetUp"
             android:exported="false" />
         <activity

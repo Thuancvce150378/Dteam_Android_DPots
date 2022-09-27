@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         if(true)//check user have been value for income
         {
-            Intent intent = new Intent(MainActivity.this, IncomeSetup.class);
+            Intent intent = new Intent(MainActivity.this, history_pot.class);
             startActivity(intent);
         }
         else

@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp">
+    tools:context=".history_pot">
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="wrap_content"
         android:layout_height="169dp"
         android:layout_margin="10dp"
@@ -18,11 +19,11 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
+            android:layout_width="125dp"
             android:layout_height="168dp"
             android:layout_weight="1"
             android:paddingLeft="10dp"
-            app:srcCompat="@drawable/edit_icon" />
+            app:srcCompat="@drawable/pot" />
 
         <LinearLayout
             android:layout_width="309dp"
@@ -88,51 +89,103 @@
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="415dp"
-        android:layout_height="62dp"
-        android:background="@drawable/rounded_corner"
-        android:orientation="horizontal"
+    <HorizontalScrollView
+        android:layout_width="402dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="181dp">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
-        <TextView
-            android:id="@+id/txtAll"
-            android:layout_width="21dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:text="All"
-            android:textSize="25sp" />
-
-        <TextView
-            android:id="@+id/txtlistname1"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:text="Food"
-            android:textSize="25sp" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
 
-        <TextView
-            android:id="@+id/txtAll3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:text="Gas"
-            android:textSize="25sp" />
+            <TextView
+                android:id="@+id/txtAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="All"
+                android:textSize="25sp" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/txtlistname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Food"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txtAll3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Gas"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txtAll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Gas"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txtAll4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Gas"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txtAll5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Gas"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txtAll6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Gas"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txtAll7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Gas"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="419dp"
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
         android:layout_height="324dp"
         android:backgroundTint="#E3E1E1"
-        tools:layout_editor_absoluteX="-8dp"
-        tools:layout_editor_absoluteY="243dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.578">
 
         <LinearLayout
             android:layout_width="415dp"
@@ -148,7 +201,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="67dp"
+                    android:layout_width="80dp"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
@@ -158,6 +211,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="10"
+                        android:textAlignment="center"
                         android:textSize="35sp" />
                 </LinearLayout>
 
