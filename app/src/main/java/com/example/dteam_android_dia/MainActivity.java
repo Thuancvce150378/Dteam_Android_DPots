@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         if(true)//check user have been value for income
         {
-            setContentView(R.layout.activity_income_setup);
+            setContentView(R.layout.activity_home);
         }
         else
         {
