@@ -4,19 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:padding="15dp"
     tools:context=".IncomeSetup">
 
-    <ImageButton
-        android:id="@+id/btnNext"
-        android:layout_width="84dp"
-        android:layout_height="48dp"
-        android:layout_weight="1"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:srcCompat="@drawable/next_page" />
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -76,6 +68,26 @@
                 android:textColorHint="#757575" />
 
         </LinearLayout>
+
+        <com.example.dteam_android_dia.PieChart
+            android:layout_width="369dp"
+            android:layout_height="108dp"
+            custom:labelPosition="left"
+            custom:showText="true" />
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/next"
+        android:scaleType="center"
+        android:src="@drawable/btnnext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,47 +25,4 @@ public class home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
     }
-
-//    public void OpenPopup(View v){
-//        final Dialog dialog = new Dialog(this);
-//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        dialog.setContentView(R.layout.activity_setup_income);
-//
-//        Window window = dialog.getWindow();
-//        if (window == null) {
-//            return;
-//        }
-//
-//        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
-//        window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-//
-//        WindowManager.LayoutParams windowAttributes = window.getAttributes();
-//        windowAttributes.gravity = Gravity.CENTER;
-//        window.setAttributes(windowAttributes);
-//
-////        if(Gravity.BOTTOM == Gravity.CENTER){
-////            dialog.setCancelable(true);
-////        }else{
-////            dialog.setCancelable(false);
-////        }
-//
-////        Button btnCancel = dialog.findViewById(R.id.btnCancel);
-////        Button btnSend = dialog.findViewById(R.id.btnSend);
-////
-////        btnCancel.setOnClickListener(new View.OnClickListener() {
-////            @Override
-////            public void onClick(View view) {
-////                dialog.dismiss();
-////            }
-////        });
-////
-////        btnSend.setOnClickListener(new View.OnClickListener() {
-////            @Override
-////            public void onClick(View view) {
-////                Toast.makeText(home.this, "Send", Toast.LENGTH_SHORT).show();
-////            }
-////        });
-//        dialog.show();
-//    }
-
 }

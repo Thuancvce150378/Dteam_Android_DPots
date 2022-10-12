@@ -17,6 +17,20 @@
             android:exported="false" />
         <activity
             android:name=".home"
+            android:exported="false"/>
+        <activity
+            
+            android:name=".AddTransaction"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".history_pot"
+            android:exported="false" />
+        <activity
+            android:name=".PotsSetUp"
             android:exported="false" />
         <activity
             android:name=".ProgramIntro"
