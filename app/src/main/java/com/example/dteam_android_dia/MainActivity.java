@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         if(true)//check user have been value for income
         {
 //            setContentView(R.layout.activity_home);
-             Intent intent = new Intent(MainActivity.this, history_pot.class);
+             Intent intent = new Intent(MainActivity.this, Plan.class);
              startActivity(intent);
         }
         else

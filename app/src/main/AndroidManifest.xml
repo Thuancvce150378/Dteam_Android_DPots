@@ -13,13 +13,19 @@
         android:theme="@style/Theme.Dteam_Android_DIA"
         tools:targetApi="31">
         <activity
+            android:name=".Plan"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SetupIncomeActivity"
             android:exported="false" />
         <activity
             android:name=".home"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
-            
             android:name=".AddTransaction"
             android:exported="false">
             <meta-data
