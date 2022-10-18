@@ -48,10 +48,9 @@
                     android:id="@+id/autoCompleteTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Food"
                     android:inputType="none"
                     android:padding="15dp"
-                    />
+                    android:text="Food" />
 
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
