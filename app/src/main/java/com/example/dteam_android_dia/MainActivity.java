@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(true)//check user have been value for income
+        if(true)
         {
 //            setContentView(R.layout.activity_home);
              Intent intent = new Intent(MainActivity.this, SetupIncomeActivity.class);
