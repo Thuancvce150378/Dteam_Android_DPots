@@ -34,28 +34,48 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
 
-        <LinearLayout
+<!--        <TableLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/border_grey">-->
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:padding="5dp"-->
+<!--                android:paddingStart="5dp"-->
+<!--                android:paddingLeft="5dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingEnd="5dp"-->
+<!--                android:paddingRight="5dp"-->
+<!--                android:paddingBottom="5dp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/ImgGroupItem"-->
+<!--                    android:layout_width="46dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:contentDescription="TODO"-->
+<!--                    app:srcCompat="@drawable/kfc_chicken" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/txtItemDescription"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:ems="10"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:minHeight="48dp"-->
+<!--                    android:text="Name" />-->
+<!--            </TableRow>-->
+
+<!--        </TableLayout>-->
+
+
+        <Spinner
+            android:background="@drawable/border_grey"
+            android:id="@+id/customIconSpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Select Group Item"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                >
-
-                <AutoCompleteTextView
-                    android:id="@+id/autoCompleteTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="none"
-                    android:padding="15dp"
-                    android:text="Food" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-        </LinearLayout>
+            android:layout_height="wrap_content" />
 
         <LinearLayout
             android:layout_width="match_parent"

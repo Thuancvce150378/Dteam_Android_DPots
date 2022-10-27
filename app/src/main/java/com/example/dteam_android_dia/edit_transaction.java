@@ -7,29 +7,47 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
-public class edit_transaction extends AppCompatActivity {
+import java.util.ArrayList;
 
-    String items[] = {"Food", "Transportation", "Home Maintenance", "Medical", "Personal Items", "Home Service","Makeup", "Fun Money"};
-    AutoCompleteTextView autoCompleteTxt;
-    ArrayAdapter<String> adapterItems;
+public class edit_transaction extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+
+    Spinner customSpinner;
+    ArrayList<CustomSpinnerItem> customList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_transaction);
 
-        autoCompleteTxt = findViewById(R.id.autoCompleteTextView);
+        customSpinner = findViewById(R.id.customIconSpinner);
+        customList = getCustomList();
+        CustomSpinnerAdapter adapter = new CustomSpinnerAdapter(this, customList);
+        if (customSpinner != null) {
+            customSpinner.setAdapter(adapter);
+            customSpinner.setOnItemSelectedListener(this);
+        }
+    }
 
-        adapterItems = new ArrayAdapter<String>(this, R.layout.dropdown_groupitem, items);
-        autoCompleteTxt.setAdapter(adapterItems);
+    private ArrayList<CustomSpinnerItem> getCustomList() {
+        customList = new ArrayList<>();
+        customList.add(new CustomSpinnerItem("Food", R.drawable.kfc_chicken));
+        customList.add(new CustomSpinnerItem("Transportation", R.drawable.ic_transpotation));
+        customList.add(new CustomSpinnerItem("Personal", R.drawable.ic_personal));
+        customList.add(new CustomSpinnerItem("Home Tools", R.drawable.ic_home_tools));
+        return customList;
+    }
 
-        autoCompleteTxt.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String item = adapterView.getItemAtPosition(i).toString();
-                Toast.makeText(getApplicationContext(), "Item: " + item, Toast.LENGTH_SHORT).show();
-            }
-        });
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        CustomSpinnerItem item = (CustomSpinnerItem) adapterView.getSelectedItem();
+        Toast.makeText(this, item.getSpinnerItemName(), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
     }
 }
