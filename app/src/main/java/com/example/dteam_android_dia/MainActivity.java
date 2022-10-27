@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         if(true)
         {
 //            setContentView(R.layout.activity_home);
-             Intent intent = new Intent(MainActivity.this, SetupIncomeActivity.class);
+             Intent intent = new Intent(MainActivity.this, AddTransaction.class);
              startActivity(intent);
         }
         else

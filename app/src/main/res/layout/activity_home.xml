@@ -30,7 +30,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingLeft="10dp">
+                    android:paddingStart="10dp">
 
                     <TextView
                         android:id="@+id/txtIncome"
@@ -60,7 +60,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#00FFFFFF"
-                            android:onClick="OpenPopup()"
+                            android:contentDescription="@string/Btn_UpdateIncome"
                             android:src="@drawable/ic_baseline_edit_24"
                             tools:ignore="OnClick,TouchTargetSizeCheck" />
                     </LinearLayout>
@@ -142,6 +142,7 @@
                     android:layout_height="179dp"
                     android:layout_weight="1"
                     android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/Pot"
                     android:scaleX="2"
                     android:scaleY="3"
                     app:srcCompat="@drawable/pot" />
@@ -169,6 +170,7 @@
                     android:layout_height="179dp"
                     android:layout_weight="1"
                     android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/IncomeWith"
                     android:scaleX="2"
                     android:scaleY="3"
                     app:srcCompat="@drawable/pot" />
@@ -196,6 +198,7 @@
                     android:layout_height="179dp"
                     android:layout_weight="1"
                     android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/Pot"
                     android:scaleX="2"
                     android:scaleY="3"
                     app:srcCompat="@drawable/pot" />
@@ -230,6 +233,7 @@
                     android:layout_height="179dp"
                     android:layout_weight="1"
                     android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/Pot"
                     android:scaleX="2"
                     android:scaleY="3"
                     app:srcCompat="@drawable/pot" />
@@ -257,6 +261,7 @@
                     android:layout_height="179dp"
                     android:layout_weight="1"
                     android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/Pot"
                     android:scaleX="2"
                     android:scaleY="3"
                     app:srcCompat="@drawable/pot" />
@@ -284,6 +289,7 @@
                     android:layout_height="179dp"
                     android:layout_weight="1"
                     android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="@string/Pot"
                     android:scaleX="2"
                     android:scaleY="3"
                     app:srcCompat="@drawable/pot" />
@@ -304,17 +310,18 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_corner"
         android:orientation="horizontal"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:baselineAligned="false">
 
         <LinearLayout
-            android:layout_width="165dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
@@ -323,17 +330,20 @@
                 android:id="@+id/floatingActionButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
                 android:layout_weight="1"
+                android:baselineAlignBottom="false"
                 android:clickable="true"
-                android:translationX="50sp"
+                android:contentDescription="@string/Btn_History"
                 android:translationY="0sp"
                 app:backgroundTint="#FFFFFF"
-                app:srcCompat="@drawable/ic_baseline_hourglass_empty_24" />
+                app:srcCompat="@drawable/ic_baseline_hourglass_empty_24"
+                android:focusable="true" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="109dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
@@ -342,15 +352,18 @@
                 android:id="@+id/floatingActionButton5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
                 android:layout_weight="1"
+                android:alpha="1"
                 android:clickable="true"
-                android:translationX="20sp"
+                android:contentDescription="@string/Btn_Add"
                 app:srcCompat="@drawable/ic_baseline_add_24" />
-
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="165dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
@@ -359,10 +372,10 @@
                 android:id="@+id/floatingActionButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
                 android:layout_weight="1"
                 android:clickable="true"
-                android:translationX="50sp"
-                android:translationY="0sp"
+                android:contentDescription="@string/Btn_Edit"
                 app:backgroundTint="#FFFFFF"
                 app:srcCompat="@android:drawable/ic_menu_edit"
                 tools:visibility="visible" />
